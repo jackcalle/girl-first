@@ -333,22 +333,22 @@ public class CubeMove : MonoBehavior {
 (This belongs on the Enemy script and makes it reset the level when you touch (collide) the player object with the enemy object.)
 
 #Week 4: July 2 
-Reviewing CubeMove, Enemy, and WinZone scripts
-Making the text “Game Over!” appear when the lives count reached 0.
-Adding images to objects
-Creating a pick-up system (using the Enemy script) with coins and other collectables
-Understanding how to read the Console and fix errors in code
+- Reviewing CubeMove, Enemy, and WinZone scripts
+- Making the text “Game Over!” appear when the lives count reached 0.
+- Adding images to objects
+- Creating a pick-up system (using the Enemy script) with coins and other collectables
+- Understanding how to read the Console and fix errors in code
 
 
-
-Week 5: July 16 
-Rotating the object 45 degrees when it touched the wall
-Using Blender 3D Model Repository to upload 3D Models into Unity
-Parenting the 3D Model to the AI cube into order to place the 3D model on top of the cube
-Using Mesh Renderer to make the cube invisible and make only the 3D model visible
-Creating background using Google Images (e.g. sand and water)
-Creating an object that chases the original object
-AIController Script:
+
+# Week 5: July 16 
+- Rotating the object 45 degrees when it touched the wall
+- Using Blender 3D Model Repository to upload 3D Models into Unity
+- Parenting the 3D Model to the AI cube into order to place the 3D model on top of the cube
+- Using Mesh Renderer to make the cube invisible and make only the 3D model visible
+- Creating background using Google Images (e.g. sand and water)
+- Creating an object that chases the original object
+# AIController Script:
 using UnityEngine;
 using System.Collections;
 
@@ -362,7 +362,7 @@ using System.Collections;
 		     transform.Translate (Vector3.forward * Time.deltaTime*speed);
 	  }
 }
-WallController Script:
+# WallController Script:
 using UnityEngine;
 using System.Collections;
 
@@ -381,23 +381,23 @@ public class WallController : MonoBehaviour {
 	}
 }
 
-Week 6: July 23 
-Based on a set of rules: the students completed a game that was required to have:
-An AI controller object that moved on its own
-CubeMove, Enemy, WinZone Scripts
-A rotation once the object touched the wall
-An object that chased the other object
-A 3D model parented to the AI Controller
-An object that the player can control (with the keys--W, A, S, D)
-Preface to publishing game on Itch.io
+# Week 6: July 23 
+- Based on a set of rules: the students completed a game that was required to have:
+      * An AI controller object that moved on its own
+      * CubeMove, Enemy, WinZone Scripts
+      * A rotation once the object touched the wall
+      * An object that chased the other object
+      * A 3D model parented to the AI Controller
+      * An object that the player can control (with the keys--W, A, S, D)
+      * Preface to publishing game on Itch.io
 ---------------------------------------------------------------------
-More Information about C# language:
+# More Information about C# language:
 
-Commentaries on Scripts:
-Enemy
+## Commentaries on Scripts:
+# Enemy
 
 
-CubeMove
+# CubeMove
 
 C# Script’s Layout/ Rule of thumb 
 The Name of the script should be similar to what the script accomplishes.
