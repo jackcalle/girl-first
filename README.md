@@ -44,7 +44,7 @@
 
 
 # CubeMove Script:
-
+```
 	using UnityEngine;
 	using System.Collections;
 	
@@ -71,6 +71,8 @@
 			}
 		}
 	}
+```
+
 ## Week 2: May 28 - May 29
 - Introductions to Standard assets (e.g. Materials, Scripts)
 - Basic scripting
@@ -90,6 +92,7 @@
 
 # Enemy Script
 
+```
 	using UnityEngine;
 	using System.Collections;
 	using UnityEngine.UI;
@@ -111,6 +114,7 @@
 		Application.LoadLevel(0);
 		}
 	}
+```
 
 
 
@@ -118,6 +122,7 @@
 
 # DangerZone Script
 
+```
 	using UnityEngine;
 	using System.Collections;
 	using UnityEngine.UI;
@@ -139,7 +144,7 @@
         	}
     	}
 	}
-
+```
 
 
 
@@ -186,6 +191,7 @@
 
 # CubeMove C# Script
 
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -213,6 +219,7 @@
 			}
 		}
 	}
+```
 
 
 
@@ -221,6 +228,7 @@
 
 # Enemy C# script
 
+```
 	using UnityEngine;
 	using System.Collections;
 	using UnityEngine.UI;
@@ -243,9 +251,11 @@
 		Application.LoadLevel(0);
 		}
 	}
+```
 
 #WinZone C# script
 
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -265,10 +275,9 @@
 		Destroy (obj.gameObject);
 		}
 	}
+```
 
 
-
-
 ## Week 3: June 25
 - Review from last week
 - Update CubeMove and Enemy scripts by adding variables speed and lives
@@ -281,6 +290,7 @@
 
 # Updated CubeMove Script
 
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -309,11 +319,13 @@
 			}
 		}
 	}
+```
 
 (Using the variable Speed it’s able to change the speed of the controls. Lives is also created to keep track of how many lives are in the game at that moment.)
 
 # Lives Script for Enemy Script
 
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -323,15 +335,18 @@
   	// Use this for initialization 
 	void Start (){
 	}
+```
 
 (The 5th line tells it to subtract one from the variable lives when the player collides with the enemy)
 
-      	void Update () {
+```
+    void Update () {
 	}
         void OnTriggerEnter(Collider obj){
                Destroy (obj.gameObject);
                Application.LoadLevel("Game");
 	}
+```
 	
 (This belongs on the Enemy script and makes it reset the level when you touch (collide) the player object with the enemy object.)
 
@@ -370,6 +385,7 @@
 ```	
 # WallController Script:
 
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -387,6 +403,7 @@
 			}
 		}
 	}
+```
 
 # Week 6: July 23 
 - Based on a set of rules: the students completed a game that was required to have:
