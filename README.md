@@ -413,14 +413,6 @@
 
 # CubeMove
 
-C# Script’s Layout/ Rule of thumb 
-The Name of the script should be similar to what the script accomplishes.
- The Name of the script’s class must be the same as the name of the script.
+![screenshot 78](https://cloud.githubusercontent.com/assets/17395593/17632393/155b4020-6096-11e6-934d-1e29764e3336.png)
 
-Right after the the class is initialized the variables should be placed before making any method.
 
-(Methods are behaviors that the script can do)
-
- The Method void Start runs when the game starts.
-The Method void Update is called once per frame.
-------------------------------------------------------------------------------
