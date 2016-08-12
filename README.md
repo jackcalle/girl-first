@@ -1,16 +1,14 @@
 # Girls First Digital Studio
-Variable - A storage of a value (number, words, etc)
-Think of a variable like an envelope it holds anything you put inside of it.
+## Variable - A storage of a value (number, words, etc)
+- Think of a variable like an envelope it holds anything you put inside of it.
 
-Types of Variables - What specific type of values the variable can store.
-Int - Stores integers (whole number negative and positive).
-    public int year = 365;
-Boolean - Stores true or false values.
-    public bool hired = true;
-Float - Stores decimal numbers.
-    public float speed = .5f;
-
-
+## Types of Variables - What specific type of values the variable can store.
+- Int - Stores integers (whole number negative and positive).
+    * public int year = 365;
+-  Boolean - Stores true or false values.
+    * public bool hired = true;
+-  Float - Stores decimal numbers.
+    * public float speed = .5f;
 
 
 
@@ -18,28 +16,21 @@ Float - Stores decimal numbers.
 
 
 
-
 
-
-
-
-
-
-
-MICROSOFT WORKSHOP
+# MICROSOFT WORKSHOP
 
  
-Week 1: May 21 - May 22
-Parents and Youth Orientation 
-Check-ins and Ice breakers 
-Introduction to Game Development and Unity 
-Editor tour
-Basic navigation (e.g. Scene, Game, Directional Light, Console, Project, Asset Store, Inspector),
-Game objects/Components (e.g. RigidBody, Collider, Transform, Mesh Renderer)
-Building simple game from 3D primitives
-Created objects Cube, players
-Created a C# Script (CubeMove) for moving the cube in four directions
-Created Microsoft OneDrive Accounts to save projects
+## Week 1: May 21 - May 22
+- Parents and Youth Orientation 
+-  Check-ins and Ice breakers 
+-  Introduction to Game Development and Unity 
+- Editor tour
+	* Basic navigation (e.g. Scene, Game, Directional Light, Console, Project, Asset Store, Inspector),
+	* Game objects/Components (e.g. RigidBody, Collider, Transform, Mesh Renderer)
+	* Building simple game from 3D primitives
+- Created objects Cube, players
+- Created a C# Script (CubeMove) for moving the cube in four directions
+-  Created Microsoft OneDrive Accounts to save projects
 
 
 
@@ -52,7 +43,7 @@ Created Microsoft OneDrive Accounts to save projects
 
 
 
-CubeMove Script:
+# CubeMove Script:
 using UnityEngine;
 using System.Collections;
 
@@ -79,23 +70,23 @@ public class CubeMove : MonoBehaviour {
 		}
 	}
 }
-Week 2: May 28 - May 29
-Introductions to Standard assets (e.g. Materials, Scripts)
-Basic scripting
-Collision detection for picking up objects
-Created a game manager
-Free building and game designing
-Created new cubes (naming them Danger Zones, Enemies)
-Stretched them into rectangles (Transform Components)
-Added color to objects
-Adding various components to the objects like Rigidbody, Colliders, and collision 
+## Week 2: May 28 - May 29
+- Introductions to Standard assets (e.g. Materials, Scripts)
+- Basic scripting
+       * Collision detection for picking up objects
+       * Created a game manager
+       *  Free building and game designing
+- Created new cubes (naming them Danger Zones, Enemies)
+      * Stretched them into rectangles (Transform Components)
+      * Added color to objects
+      * Adding various components to the objects like Rigidbody, Colliders, and collision 
 
-Introduction to Blender
-Created C# Scripts 
-Enemy-collects objects when the player collides with object
-Danger Zone- the player dies when it triggers the danger zone (Red Area)
+- Introduction to Blender
+- Created C# Scripts 
+      * Enemy-collects objects when the player collides with object
+      *Danger Zone- the player dies when it triggers the danger zone (Red Area)
 
-Enemy Script
+# Enemy Script
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
@@ -122,7 +113,7 @@ public class Enemy : MonoBehaviour {
 
 
 
-DangerZone Script
+# DangerZone Script
 
 using UnityEngine;
 using System.Collections;
@@ -149,12 +140,12 @@ public class DangerZone : MonoBehaviour {
 
 
 
-Week 3: June 4- June 5
-Introduction to the Blender and the Terrain tool
-Used various images from Google Images for game design
-Created objects (ship, Iceberg terrain) and installed them into Unity
-Created landscape and added CubeMove script to ship
-https://twitter.com/albertolacon/status/739535527339163648
+## Week 3: June 4- June 5
+- Introduction to the Blender and the Terrain tool
+- Used various images from Google Images for game design
+- Created objects (ship, Iceberg terrain) and installed them into Unity
+- Created landscape and added CubeMove script to ship
+- **https://twitter.com/albertolacon/status/739535527339163648**
 
 
 
