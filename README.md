@@ -164,33 +164,34 @@ https://twitter.com/albertolacon/status/739535527339163648
 
 
 
-THINK RISE NEW YORK WORKSHOP
+# THINK RISE NEW YORK WORKSHOP
 
 
-Week 1: June 11
+## Week 1: June 11
 
-Introduction
-Check-ins 
-Ice breakers
-Introduction to Unity and Blender 
-Presentations of few games by the instructor
-Creating account for Unity 
-
-
-Week 2: June 18 
-Check-ins
-Downloading Unity and Blender
-Start to work on first project in unity
-Create two objects( Enemy, Player)
-Adding Rigidbody 2D (Physics to the object)
-Adding box Collider 2D (Physics to the object)
-Create C# scripts
-CubeMove--moves the object player in four directions upon pressing down certain keys
-Enemy (which was DangerZone in the Microsoft Workshop)
-WinZone (which was Enemy in the Microsoft Workshop)	 
+- Introduction
+- Check-ins 
+- Ice breakers
+- Introduction to Unity and Blender 
+- Presentations of few games by the instructor
+- Creating account for Unity 
 
 
-CubeMove C# Script 
+## Week 2: June 18 
+- Check-ins
+- Downloading Unity and Blender
+- Start to work on first project in unity
+- Create two objects( Enemy, Player)
+   * Adding Rigidbody 2D (Physics to the object)
+   * Adding box Collider 2D (Physics to the object)
+- Create C# scripts
+   * CubeMove--moves the object player in four directions upon pressing down certain keys
+   * Enemy (which was DangerZone in the Microsoft Workshop)
+   * WinZone (which was Enemy in the Microsoft Workshop)	 
+
+
+# CubeMove C# Script
+
 using UnityEngine;
 using System.Collections;
 
@@ -217,14 +218,14 @@ public class CubeMove : MonoBehaviour {
 			transform.position += new Vector3 (speed, 0, 0);
 		}
 	}
-}
+					}
 
 
 
 
 
 
-Enemy C# script
+# Enemy C# script
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
@@ -248,7 +249,7 @@ public class Enemy : MonoBehaviour {
 	}
 }
 
-WinZone C# script
+#WinZone C# script
 
 using UnityEngine;
 using System.Collections;
@@ -273,17 +274,17 @@ public class WinZone : MonoBehaviour {
 
 
 
-Week 3: June 25
-Review from last week
-Update CubeMove and Enemy scripts by adding variables speed and lives
-Application.LoadLevel--reloading the game/level
-Learning to use Build Settings
-Learning to use Unity API
-Tagging the cube--“player”
-Adding Canvas and text to game
-Adding color to object/Creating Materials/Assets folder
+## Week 3: June 25
+- Review from last week
+- Update CubeMove and Enemy scripts by adding variables speed and lives
+- Application.LoadLevel--reloading the game/level
+- Learning to use Build Settings
+- Learning to use Unity API
+- Tagging the cube--“player”
+- Adding Canvas and text to game
+- Adding color to object/Creating Materials/Assets folder
 
-Updated CubeMove Script
+# Updated CubeMove Script
 using UnityEngine;
 using System.Collections;
 
@@ -315,7 +316,7 @@ public class CubeMove : MonoBehaviour {
 
 (Using the variable Speed it’s able to change the speed of the controls. Lives is also created to keep track of how many lives are in the game at that moment.)
 
-Lives Script for Enemy Script
+# Lives Script for Enemy Script
 using UnityEngine;
 using System.Collections;
 
@@ -336,7 +337,7 @@ public class CubeMove : MonoBehavior {
 }
 (This belongs on the Enemy script and makes it reset the level when you touch (collide) the player object with the enemy object.)
 
-Week 4: July 2 
+#Week 4: July 2 
 Reviewing CubeMove, Enemy, and WinZone scripts
 Making the text “Game Over!” appear when the lives count reached 0.
 Adding images to objects
