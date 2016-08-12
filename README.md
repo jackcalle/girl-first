@@ -408,6 +408,8 @@
 
 ![screen shot 2016-08-06 at 3 43 00 pm](https://cloud.githubusercontent.com/assets/16143142/17632118/c2c784dc-6094-11e6-8330-621e1488e901.png)
 
+![screen shot 2016-08-06 at 3 42 39 pm](https://cloud.githubusercontent.com/assets/16143142/17632200/1aaf7074-6095-11e6-8b2a-8c8c7be7b6ae.png)
+
 
 # CubeMove
 
