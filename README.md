@@ -44,17 +44,18 @@
 
 
 # CubeMove Script:
-using UnityEngine;
-using System.Collections;
 
-public class CubeMove : MonoBehaviour {
-	public float speed = .5f;
+	using UnityEngine;
+	using System.Collections;
 	
-	// Use this for initialization
-	void Start () {	
-	}
-	// Update is called once per frame
-	void Update () {
+	public class CubeMove : MonoBehaviour {
+		public float speed = .5f;
+	
+		// Use this for initialization
+		void Start () {	
+		}
+		//Update is called once per frame
+		void Update () {
 
 		if(Input.GetKey(KeyCode.W)){
 			transform.position += new Vector3 (0, 0, speed);
@@ -67,9 +68,9 @@ public class CubeMove : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.D)){
 			transform.position += new Vector3 (speed, 0, 0);
+			}
 		}
 	}
-}
 ## Week 2: May 28 - May 29
 - Introductions to Standard assets (e.g. Materials, Scripts)
 - Basic scripting
@@ -87,11 +88,12 @@ public class CubeMove : MonoBehaviour {
       *Danger Zone- the player dies when it triggers the danger zone (Red Area)
 
 # Enemy Script
-using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour {
+	using UnityEngine;
+	using System.Collections;
+	using UnityEngine.UI;
+	
+	public class Enemy : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
@@ -106,8 +108,8 @@ public class Enemy : MonoBehaviour {
 		CubeMove.lives -= 1;
 		Destroy (obj.gameObject);
 		Application.LoadLevel(0);
+		}
 	}
-}
 
 
 
@@ -115,27 +117,27 @@ public class Enemy : MonoBehaviour {
 
 # DangerZone Script
 
-using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+	using UnityEngine;
+	using System.Collections;
+	using UnityEngine.UI;
+	
+	public class DangerZone : MonoBehaviour {
 
-public class DangerZone : MonoBehaviour {
+    	// Use this for initialization
+    	void Start () {
 
-    // Use this for initialization
-    void Start () {
+    	}
 
-    }
+    	// Update is called once per frame
+    	void Update () {
+    	}
 
-    // Update is called once per frame
-    void Update () {
-    }
-
-    void OnTriggerEnter(Collider obj){
+    	void OnTriggerEnter(Collider obj){
         if (obj.tag == "player") {
             Destroy (obj.gameObject);
-        }
-    }
-}
+        	}
+    	}
+	}
 
 
 
@@ -183,10 +185,10 @@ public class DangerZone : MonoBehaviour {
 
 # CubeMove C# Script
 
-using UnityEngine;
-using System.Collections;
+	using UnityEngine;
+	using System.Collections;
 
-public class CubeMove : MonoBehaviour {
+	public class CubeMove : MonoBehaviour {
 	public float speed = .5f;
 	// Use this for initialization
 	void Start () {
@@ -207,9 +209,9 @@ public class CubeMove : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.D)){
 			transform.position += new Vector3 (speed, 0, 0);
+			}
 		}
 	}
-					}
 
 
 
@@ -217,11 +219,12 @@ public class CubeMove : MonoBehaviour {
 
 
 # Enemy C# script
-using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour {
+	using UnityEngine;
+	using System.Collections;
+	using UnityEngine.UI;
+
+	public class Enemy : MonoBehaviour {
 	public Text text;
 	// Use this for initialization
 	void Start () {
@@ -237,15 +240,15 @@ public class Enemy : MonoBehaviour {
 		CubeMove.lives -= 1;
 		Destroy (obj.gameObject);
 		Application.LoadLevel(0);
+		}
 	}
-}
 
 #WinZone C# script
 
-using UnityEngine;
-using System.Collections;
+	using UnityEngine;
+	using System.Collections;
 
-public class WinZone : MonoBehaviour {
+	public class WinZone : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -259,8 +262,8 @@ public class WinZone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider obj){
 		Destroy (obj.gameObject);
+		}
 	}
-}
 
 
 
@@ -276,6 +279,7 @@ public class WinZone : MonoBehaviour {
 - Adding color to object/Creating Materials/Assets folder
 
 # Updated CubeMove Script
+
 using UnityEngine;
 using System.Collections;
 
