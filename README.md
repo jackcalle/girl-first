@@ -350,8 +350,9 @@
 - Using Mesh Renderer to make the cube invisible and make only the 3D model visible
 - Creating background using Google Images (e.g. sand and water)
 - Creating an object that chases the original object
-# AIController Script:
 
+# AIController Script:
+```
 	using UnityEngine;
 	using System.Collections;
 
@@ -362,10 +363,10 @@
 		}
 		// Update is called once per frame
 		void Update () {
-		     transform.Translate (Vector3.forward \* Time.deltaTime\*speed);
+		     transform.Translate (Vector3.forward \* Time.deltaTime\* speed);
 	  	}
 	}
-	
+```	
 # WallController Script:
 
 	using UnityEngine;
