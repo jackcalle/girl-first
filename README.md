@@ -81,6 +81,7 @@
       * Stretched them into rectangles (Transform Components)
       * Added color to objects
       * Adding various components to the objects like Rigidbody, Colliders, and collision 
+![screen shot 2016-08-06 at 2 43 17 pm](https://cloud.githubusercontent.com/assets/16143142/17632036/6b770298-6094-11e6-8868-421974a87226.png)
 
 - Introduction to Blender
 - Created C# Scripts 
