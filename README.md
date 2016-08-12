@@ -280,10 +280,10 @@
 
 # Updated CubeMove Script
 
-using UnityEngine;
-using System.Collections;
+	using UnityEngine;
+	using System.Collections;
 
-public class CubeMove : MonoBehaviour {
+	public class CubeMove : MonoBehaviour {
 	public float speed = .5f;
 	public static int lives=3;
 	// Use this for initialization
@@ -305,31 +305,33 @@ public class CubeMove : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.D)){
 			transform.position += new Vector3 (speed, 0, 0);
+			}
 		}
 	}
-}
 
 (Using the variable Speed it’s able to change the speed of the controls. Lives is also created to keep track of how many lives are in the game at that moment.)
 
 # Lives Script for Enemy Script
-using UnityEngine;
-using System.Collections;
 
-public class CubeMove : MonoBehavior {
+	using UnityEngine;
+	using System.Collections;
+
+	public class CubeMove : MonoBehavior {
 	public float speed = .5f;
 	public static int lives=3;
-  // Use this for initialization 
+  	// Use this for initialization 
 	void Start (){
 	}
 
 (The 5th line tells it to subtract one from the variable lives when the player collides with the enemy)
 
-       void Update () {
-}
-       void OnTriggerEnter(Collider obj){
+      	void Update () {
+	}
+        void OnTriggerEnter(Collider obj){
                Destroy (obj.gameObject);
                Application.LoadLevel("Game");
-}
+	}
+	
 (This belongs on the Enemy script and makes it reset the level when you touch (collide) the player object with the enemy object.)
 
 #Week 4: July 2 
@@ -349,10 +351,11 @@ public class CubeMove : MonoBehavior {
 - Creating background using Google Images (e.g. sand and water)
 - Creating an object that chases the original object
 # AIController Script:
-using UnityEngine;
-using System.Collections;
 
-  public class AIController : MonoBehaviour {
+	using UnityEngine;
+	using System.Collections;
+
+  	public class AIController : MonoBehaviour {
 	public float speed = 2.0f;
 		// Use this for initialization
 		void Start () {
@@ -360,13 +363,15 @@ using System.Collections;
 		// Update is called once per frame
 		void Update () {
 		     transform.Translate (Vector3.forward * Time.deltaTime*speed);
-	  }
-}
+	  	}
+	}
+	
 # WallController Script:
-using UnityEngine;
-using System.Collections;
 
-public class WallController : MonoBehaviour {
+	using UnityEngine;
+	using System.Collections;
+
+	public class WallController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	}
@@ -377,9 +382,9 @@ public class WallController : MonoBehaviour {
 		if (obj.tag == "AI") {
 			transform.Rotate (new Vector3 (0, 180, 0));
 			transform.Rotate (new Vector3 (0, 45, 0));
+			}
 		}
 	}
-}
 
 # Week 6: July 23 
 - Based on a set of rules: the students completed a game that was required to have:
